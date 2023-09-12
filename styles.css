@@ -1,0 +1,385 @@
+body {
+  /* Set the background image URL */
+
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+.image-container {
+  background-image: url("./images/Untitled-1 2.jpg");
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-size: 100% 100vh; /* Cover 100% of the width and 100% of the viewport height */
+  min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Styles for .navbar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  position: fixed; /* Set the navigation bar to a fixed position */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgb(75, 93, 143);
+  width: 100%; /* Ensure the navbar spans the entire width */
+  height: 30px;
+}
+.logoname{
+  color: #fff;
+  line-height: 2px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+/* Styles for .logo */
+.logo img {
+  width: 50px; /* Adjust the width of your logo */
+  height: auto;
+}
+
+/* Styles for .nav-links */
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px; /* Adjust the spacing between navigation links */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Styles for .enquire-button */
+.enquire-button {
+  background-color: #40ad49;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.enquire-button:hover {
+  background-color: #fff;
+  color: black;
+}
+.center-button {
+  text-align: center;
+}
+
+.center-button button {
+  background-color: transparent; /* Set background color to transparent */
+  border: 2px solid #fff; /* Add a border with your desired color (blue in this example) */
+  color: #fff; /* Set the text color to match the border color */
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.center-button button:hover {
+  background-color: #91bb91; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+}
+.text-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text-main h1:first-child{
+font-size: 100px;
+color: #fff;
+}
+.discover-button{
+  margin-top: 50px;
+color:#fff;
+}
+
+.text-main h1:nth-child(2){
+  color: #fff;
+font-size: 80px;
+}
+.text-main p{
+color: #35f39b;
+font-size: 20px;
+font-weight: bold;
+}
+.details-section {
+  margin-top: inherit;
+  background-color: rgb(26, 36, 64);
+  padding-top: 9%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.search-div {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  width: 60%;
+  height: 80px;
+  color: #000;
+  font-size: 14px;
+  border-radius: 12px;
+}
+.searchbar {
+  align-items: center;
+  display: flex;
+  gap: 20%;
+  justify-content: flex-start;
+}
+.details-1,
+.details-2 {
+   margin: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15%;
+}
+.left,.right{
+  position: relative;
+}
+.left img {
+    height: 300px;
+    width: 200px;
+    transform: rotate(10deg);
+}
+.right img {
+    height: 300px;
+    width: 200px;
+    transform: rotate(10deg);
+}
+.left img:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-10deg);
+}
+.right img:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-10deg);
+}
+
+.extra-details{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10%;
+    margin-bottom: 100px;
+}
+.plus p{
+    font-size: 11px;
+}
+.plus h1{
+   color: #35946c;
+}
+.advantages{
+  padding-top: 9%;
+}
+.advantages-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.advantages-details p{
+color: #36917a;
+}
+
+
+.container{
+  display: flex;
+  margin-bottom: 120px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5%;
+  gap: 4%;
+}
+.child{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.child h1{
+ font-size: 16px;
+}
+.child img{
+width: 200px;
+height: 200px;
+ }
+
+
+ .child h1:first-child {
+ color: #52ad87;
+}
+.services{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 9%;
+}
+.services-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.services-details p{
+    color: #35946c;
+    font-weight: bold;
+}
+.services-image img{
+    object-fit: cover;
+    width: 100%;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-details-1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-details-2{
+    display: flex;
+    align-items: center;
+
+}
+
+  /* Define the grid container */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10%; 
+    margin-bottom: 150px;
+}
+
+
+.grid-item {
+    padding: 10px;
+    display: flex;
+    align-items:start;
+}
+
+/* Style the image within each grid item */
+.grid-item img {
+    max-width: 100%;
+    margin-right: 10px; /* Adjust the spacing between the image and text */
+}
+
+.grid-item h1{
+font-size: 15px;
+font-weight: bold;
+}
+
+.grid-item p{
+  font-size: 12px;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact {
+  display: flex;
+  background-color: rgb(26, 36, 64);
+  color: #fff;
+  padding-top: 9%;
+}
+.contact-details {
+  width: 40%;
+}
+.contact-image {
+  width: 60%;
+}
+.contact-image img {
+  max-width: 100%; /* Set the maximum width of the image to 100% of the container */
+  height: auto; /* Allow the image's height to adjust proportionally */
+  display: block; /* Remove any extra space beneath the image */
+}
+
+.contact-form{
+    margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+
+button {
+  background-color:#35946c;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  width: 130px;
+  height: 50px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.footer{
+  margin: 100px;
+}
+.footer-details-1 h1{
+font-size: 80px;
+}
