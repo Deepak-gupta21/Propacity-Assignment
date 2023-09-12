@@ -39,7 +39,7 @@ This project aims to create a contact form on a website that collects user data 
 
 - **Google Sheets Permissions:** Ensuring that the Google Sheet was correctly configured with the necessary permissions was a challenge. Public sharing settings had to be adjusted to make it accessible.
 
-- **Tabletop.js Issues:** Initially, there were issues with the Tabletop.js library, and we had to use the correct URL format for Google Sheets to make it work.
+- **Tabletop.js Issues:** Initially, there were issues with the Tabletop.js library, and I had to use the correct URL format for Google Sheets to make it work.(Sheet db)
 
 - **Error Handling:** Proper error handling was necessary to detect issues with API requests and data transmission.
 
